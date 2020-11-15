@@ -13,12 +13,12 @@ def meters_to_planck_lengths(meters):
     return round(planck_lengths, 2)
 
 
-def planck_lengths_to_meters(pl):
+def planck_lengths_to_meters(lp):
 
     conversion = 1.61605 * 10**-35
-    meters = pl * conversion
-    if pl == 0:
+    meters = lp * conversion
+    if lp == 0:
         raise Exception('Cannot calculate zero value!\n')
 
-    return meters
+    return round(meters, round)
 
