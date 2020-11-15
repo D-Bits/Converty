@@ -1,5 +1,5 @@
 from unittest import TestCase
-from area import(
+from converty.area import(
     acres_to_sqft,
     sqft_to_acres,
     acres_to_hectares,
@@ -29,3 +29,4 @@ class AreaTests(TestCase):
     def test_hectares_to_acres(self):
 
         self.assertAlmostEqual(hectares_to_acres(1), 2.47)
+        
