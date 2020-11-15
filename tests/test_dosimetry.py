@@ -1,5 +1,5 @@
 from unittest import TestCase
-from dosimetry import(
+from converty.dosimetry import(
     rems_to_sieverts, 
     sieverts_to_rems,
     rads_to_grays,

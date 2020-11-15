@@ -1,5 +1,5 @@
 from unittest import TestCase
-from volumes import litres_to_gallons, gallons_to_litres
+from converty.volume import litres_to_gallons, gallons_to_litres
 
 
 class VolumeTests(TestCase):
