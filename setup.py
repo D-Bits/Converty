@@ -23,11 +23,5 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9.0",
     ],
-    packages=["reader"],
-    include_package_data=True,
-    entry_points={
-        "console_scripts": [
-            "realpython=reader.__main__:main",
-        ]
-    },
+    include_package_data=True
 )
