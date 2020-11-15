@@ -8,6 +8,7 @@ A collection of programs to convert various units of measurement. Works offline.
 * dosimetry.py: Ionizing radiation conversions (Rems, Sieverts, etc).
 * temperature.py: Temperature conversions (Celsius, Fahrenheit, Kelvin).
 * astronomy.py: Astronomical conversions (Metric, imperial, light years, AU, parsecs).
+* planck.py: Conversions for Planck units.
 
 ## Requirements
 
