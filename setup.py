@@ -15,9 +15,8 @@ setup(
     description="A library for unit conversions.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/realpython/reader",
+    url="https://github.com/D-Bits/Converty",
     author="Dana Lockwood",
-    author_email="lockwood.da88@gmail.com",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
