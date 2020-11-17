@@ -3,7 +3,8 @@ Conversions for Planck units to metric units.
 """
 
 
-def meters_to_planck_lengths(meters): 
+# Convert meters to planck lengths
+def meters_to_lp(meters): 
 
     conversion = 1.61605 * 10**-35
     planck_lengths = meters / conversion
@@ -13,7 +14,8 @@ def meters_to_planck_lengths(meters):
     return round(planck_lengths, 2)
 
 
-def planck_lengths_to_meters(lp):
+# Convert planck lengths to meters
+def lp_to_meters(lp):
 
     conversion = 1.61605 * 10**-35
     meters = lp * conversion
@@ -21,4 +23,3 @@ def planck_lengths_to_meters(lp):
         raise Exception('Cannot calculate zero value!\n')
 
     return round(meters, round)
-
