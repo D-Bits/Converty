@@ -4,26 +4,22 @@ Conversions for Planck units to metric units.
 
 
 # Convert meters to planck lengths
-def meters_to_lp(meters: float) -> float: 
+def meters_to_lp(meters: float, rounding: int) -> float: 
 
-    try:
-        conversion = 1.61605 * 10**-35
-        planck_lengths = meters / conversion
+    conversion = 1.61605 * 10**-35
+    if meters == 0:
+        raise Exception('Cannot calculate zero value!\n')
+    planck_lengths = meters / conversion
 
-        return round(planck_lengths, 2)
+    return round(planck_lengths, rounding)
 
-    except ZeroDivisionError:
-        return "Error: Cannot divide by zero."
-    except TypeError:
-        return "Error: Must pass in an int, or a float."
-        
 
 # Convert planck lengths to meters
-def lp_to_meters(lp: float) -> float:
+def lp_to_meters(lp: float, rounding: int) -> float:
 
     conversion = 1.61605 * 10**-35
     meters = lp * conversion
     if lp == 0:
         raise Exception('Cannot calculate zero value!\n')
 
-    return round(meters, round)
+    return round(meters, rounding)
