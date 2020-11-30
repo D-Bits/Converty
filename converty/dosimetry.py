@@ -4,7 +4,7 @@ measurements of ionizing radiation (Rems, Sieverts, etc)
 """
 
 
-def rems_to_sieverts(rems):
+def rems_to_sieverts(rems: float) -> float:
 
     sieverts = rems / 100
     if rems == 0:
@@ -13,7 +13,7 @@ def rems_to_sieverts(rems):
     return round(sieverts, 2)
 
 
-def sieverts_to_rems(sieverts):
+def sieverts_to_rems(sieverts: float) -> float:
 
     rems = sieverts * 100
     if sieverts == 0:
@@ -22,7 +22,7 @@ def sieverts_to_rems(sieverts):
     return round(rems, 2)
 
 
-def rads_to_grays(rads):
+def rads_to_grays(rads: float) -> float:
 
     grays = rads /100
     if rads == 0:
@@ -31,7 +31,7 @@ def rads_to_grays(rads):
     return round(grays, 2) 
     
 
-def grays_to_rads(grays):
+def grays_to_rads(grays: float) -> float:
 
     rads = grays * 100
     if grays == 0:

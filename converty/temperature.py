@@ -2,7 +2,8 @@
 Temperature conversions. 
 """
 
-def fahrenheit_to_celsius(fahrenheit):
+
+def fahrenheit_to_celsius(fahrenheit: float) -> float:
 
     # Throw exception if input is < absolute zero
     if fahrenheit < -459.67:
@@ -12,7 +13,7 @@ def fahrenheit_to_celsius(fahrenheit):
     return round(celsius, 2)
 
 
-def celsius_to_fahrenheit(celsius):
+def celsius_to_fahrenheit(celsius: float) -> float:
 
     fahrenheit = celsius * 1.80 + 32.00
     if celsius < -273.15:
@@ -21,7 +22,7 @@ def celsius_to_fahrenheit(celsius):
     return round(fahrenheit, 2)
 
 
-def celsius_to_kelvin(celsius):
+def celsius_to_kelvin(celsius: float) -> float:
 
     kelvin = celsius + 273.15
     if celsius < -273.15:
@@ -30,7 +31,7 @@ def celsius_to_kelvin(celsius):
     return round(kelvin, 2)
 
 
-def kelvin_to_celsius(kelvin):
+def kelvin_to_celsius(kelvin: float) -> float:
 
     celsius = kelvin - 273.15
     if kelvin < 0:
@@ -39,7 +40,7 @@ def kelvin_to_celsius(kelvin):
     return round(celsius, 2)
 
 
-def fahrenheit_to_kelvin(fahrenheit):
+def fahrenheit_to_kelvin(fahrenheit: float) -> float:
 
     kelvin = ((fahrenheit - 32) / 1.80)+ 273.15
     if fahrenheit < -459.67:
@@ -48,7 +49,7 @@ def fahrenheit_to_kelvin(fahrenheit):
     return round(kelvin, 2)
 
 
-def kelvin_to_fahrenheit(kelvin):
+def kelvin_to_fahrenheit(kelvin: float) -> float:
 
     fahrenheit = (kelvin - 273.15) * 1.80 + 32
 

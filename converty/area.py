@@ -3,7 +3,7 @@ Unit coversions for areas.
 """
 
 
-def acres_to_sqft(acres):
+def acres_to_sqft(acres: float) -> float:
 
 
     sqft = acres * 43560
@@ -13,7 +13,7 @@ def acres_to_sqft(acres):
     return round(sqft, 2)
 
 
-def sqft_to_acres(sqft):
+def sqft_to_acres(sqft: float) -> float:
 
     acres = sqft / 43560
     if sqft == 0:
@@ -22,7 +22,7 @@ def sqft_to_acres(sqft):
     return round(acres, 2)
 
 
-def acres_to_hectares(acres):
+def acres_to_hectares(acres: float) -> float:
 
     hectares = acres / 2.4711
     if acres == 0:
@@ -31,7 +31,7 @@ def acres_to_hectares(acres):
     return round(hectares, 2)
 
 
-def hectares_to_acres(hectares):
+def hectares_to_acres(hectares: float) -> float:
 
     acres = hectares * 2.4711
     if hectares == 0:

@@ -2,7 +2,7 @@
 Conversions for volume.
 """
 
-def litres_to_gallons(litres):
+def litres_to_gallons(litres: float) -> float:
 
     gallons = litres * 0.26417
     if litres == 0:
@@ -11,7 +11,7 @@ def litres_to_gallons(litres):
     return round(gallons, 2)
 
 
-def gallons_to_litres(gallons):
+def gallons_to_litres(gallons: float) -> float:
 
     litres = gallons / 0.26417
     if gallons == 0:
