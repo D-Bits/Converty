@@ -17,11 +17,13 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/D-Bits/Converty",
     author="Dana Lockwood",
+    author_email="lockwood.da88@gmail.com",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9.0",
     ],
-    include_package_data=True
+    include_package_data=True,
+    python_requires='>=3.6',
 )
